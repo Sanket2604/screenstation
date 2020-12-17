@@ -1,0 +1,402 @@
+.contact_cont{
+    margin-top: 20px;
+    padding: 0 5vw;
+}
+.contact_cont .section1 .heading .big{
+    font-size: 32px;
+    font-weight: 600;
+}
+.contact_cont .section1 .heading .small{
+    font-size: 18px;
+}
+.form_cont{
+    display: grid;
+    grid-template: 0.5fr 0.5fr 0.5fr / 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+}
+.form_cont .notes{
+    grid-column: 1 / 3;
+}
+.form_cont .option{
+    width: 80%;
+    height: 70%;
+    font-size: 18px;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+.form{
+    width: 90%;
+    position: relative;
+    height: 70px;
+    overflow: hidden;
+    font-size: 20px;
+    color: black;
+}
+.form input{
+    width: 100%;
+    height: 100%;
+    color: #595f6e;
+    padding-top: 20px;
+    border: none;
+    outline: none;
+    background: rgba(255, 255, 255, 0);
+}
+.form label{
+    position: absolute;
+    bottom: 0px;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    border-bottom: 1px solid black;
+}
+.form label::after {
+    content: "";
+    position: absolute;
+    left: 0px;
+    bottom: -1px;
+    width: 100%;
+    height: 100%;
+    border-bottom: 4px solid #087dc0;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+}
+
+.content-name {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    transition: all 0.3s ease;
+    font-weight: 500;
+}
+
+.form input:focus + .label-name .content-name,
+.form input:valid + .label-name .content-name {
+    transform: translateY(-150%);
+    font-size: 18px;
+    color: #087dc0;
+
+}
+
+.form input:focus + .label-name::after, 
+.form input:valid + .label-name::after{
+    transform: translateX(0%);
+}
+
+.form_cont .notes .heading{
+    font-size: 20px;
+    margin-top: 10px;
+    font-weight: 500;
+}
+
+.form_cont textarea{
+    width: 95%;
+    height: 125px;
+    padding: 5px 10px;
+    font-size: 18px;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid black;
+    transition: 0.5s ease-in-out;
+}
+.form_cont textarea:hover{
+    border: 1px solid #087dc0;
+}
+.contact_cont .submit_cont{
+    display: flex;
+    justify-content: center;
+}
+.contact_cont .submit_cont .submit{
+    width: fit-content;
+    margin-top: 30px;
+    padding: 5px 30px;
+    background-color: rgb(0, 138, 218);
+    color: white;
+    border-radius: 50px; 
+    font-size: 24px;
+    transition: 0.5s ease-in-out;
+}
+.contact_cont .submit_cont .submit:hover{
+    text-decoration: none;
+    background-color: rgb(0, 78, 122);
+    transform: translateY(-10px);
+    box-shadow: 0 5px 10px rgba(78, 78, 78, 0.4);
+}
+.contact_cont .section2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.contact_cont .section2 .section2_cont{
+    border-left: 2px solid rgb(199, 199, 199);
+    padding-left: 50px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.contact_cont .section2 .heading .big{
+    font-size: 32px;
+    font-weight: 600;
+}
+.contact_cont .section2 .contact_us .reach{
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.contact_cont .section2 .contact_us span{
+    margin-right: 10px;
+    font-size: 24px;
+}
+.socialcontainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 30px;  
+}
+
+.social-icons a {
+  display: inline-block;
+  width: 45px;
+  height: 45px;
+  font-size: 24px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+  margin-right: 15px;
+  transition: all 0.5s ease-in-out;
+}
+.social-icons a .fab, 
+.social-icons a .far, 
+.social-icons a .fas{
+  line-height: 45px;
+}
+.social-icons .mob{
+  color: black;
+  animation-name: mob;
+  animation-direction: normal;
+  animation-duration: 10s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  animation-play-state: running;
+  animation-timing-function: linear;
+}
+
+@keyframes mob{
+  0%{
+    color: black;
+    background-color: transparent;
+    transform: translateY(0px) scale(1);
+  }
+  10%{
+    background: black;
+    color: white;
+    transform: translateY(-10px) scale(1.1);
+  }
+  20%{
+    color: black;
+    background-color: transparent;
+    transform: translateY(0px) scale(1);
+  }
+}
+.social-icons .mob:hover{
+  background: black;
+  color: white;
+  transform: translateY(-10px) scale(1.1);
+}
+.social-icons .loc{
+  color: rgb(255, 51, 0);
+  transition-timing-function: none;
+  animation-name: loc;
+  animation-direction: normal;
+  animation-duration: 10s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  animation-play-state: running;
+  animation-timing-function: linear;
+}
+@keyframes loc{
+  20%{
+    color: rgb(255, 51, 0);
+    background-color: transparent;
+    transform: translateY(0px) scale(1);
+  }
+  30%{
+    background-color: rgb(255, 51, 0);
+    color: white;
+    transform: translateY(-10px) scale(1.1);
+  }
+  40%{
+    color: rgb(255, 51, 0);
+    background-color: transparent;
+    transform: translateY(0px) scale(1);
+  }
+}
+.social-icons .loc:hover{
+  background: rgb(255, 51, 0);
+  color: white;
+  transform: translateY(-10px) scale(1.1);
+}
+.social-icons .mail{
+  color: #c71610;
+  animation-name: mail;
+  animation-direction: normal;
+  animation-duration: 10s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  animation-play-state: running;
+  animation-timing-function: linear;
+}
+@keyframes mail{
+  40%{
+    color: #c71610;
+    background-color: transparent;
+    transform: translateY(0px) scale(1);
+  }
+  50%{
+    background-color: #c71610;
+    transform: translateY(-10px) scale(1.1);
+    color: white;
+  }
+  60%{
+    color: #c71610;
+    background-color: transparent;
+    transform: translateY(0px) scale(1);
+  }
+}
+.social-icons .mail:hover {
+  background: #c71610;
+  color: white;
+  transform: translateY(-10px) scale(1.1);
+}
+.social-icons .fb{
+  color: #4267B2;
+  animation-name: fb;
+  animation-direction: normal;
+  animation-duration: 10s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  animation-play-state: running;
+  animation-timing-function: linear;
+}
+@keyframes fb{
+  60%{
+    color: #4267B2;
+    background-color: transparent;
+    transform: translateY(0px) scale(1);
+  }
+  70%{
+    background-color: #4267B2;
+    transform: translateY(-10px) scale(1.1);
+    color: white;
+  }
+  80%{
+    color: #4267B2;
+    background-color: transparent;
+    transform: translateY(0px) scale(1);
+  }
+}
+.social-icons .fb:hover {
+  background: #4267B2;
+  color: white;
+  transform: translateY(-10px) scale(1.1);
+}
+.social-icons .link{
+  color: #060057;
+  animation-name: link;
+  animation-direction: normal;
+  animation-duration: 10s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  animation-play-state: running;
+  animation-timing-function: linear;
+}
+@keyframes link{
+  80%{
+    transform: translateY(0px) scale(1);
+    color: #060057;
+    background-color: transparent;
+  }
+  90%{
+    transform: translateY(-10px) scale(1.1);
+    background-color: #060057;
+    color: white;
+  }
+  100%{
+    color: #060057;
+    background-color: transparent;
+    transform: translateY(0px) scale(1);
+  }
+}
+.social-icons .link:hover {
+  background: #060057;
+  color: white;
+  transform: translateY(-10px) scale(1.1);
+}
+.socialcontainer:hover .social-icons .mob,
+.socialcontainer:hover .social-icons .loc,
+.socialcontainer:hover .social-icons .mail,
+.socialcontainer:hover .social-icons .fb,
+.socialcontainer:hover .social-icons .link{
+  animation-name: none;
+}
+@media only screen and (max-width:1075px){
+  
+  .contact_cont .section1 .heading .big{
+    font-size: 28px;
+  }
+  .contact_cont .section2 .heading .big{
+    font-size: 24px;
+    font-weight: 600;
+  }
+}
+
+@media only screen and (max-width:1075px){
+  
+  .contact_cont .section2 .section2_cont{
+    border-left: none;
+    padding-left: 0px;
+  }
+}
+@media only screen and (max-width:550px){
+  
+  .form_cont{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .form_cont .option{
+    width: 90%;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 18px;
+  }
+  .form{
+    font-size: 18px;
+  }
+  .form input:focus + .label-name .content-name,
+  .form input:valid + .label-name .content-name {
+    font-size: 16px;
+  }
+  .form_cont .notes .heading{
+    font-size: 18px;
+  }
+  .form_cont textarea{
+    font-size: 16px;
+  }
+  .contact_cont .submit_cont .submit{
+    font-size: 18px;
+  }
+  .contact_cont .section1 .heading .big{
+    font-size: 24px;
+  }
+  .contact_cont .section2 .heading .big{
+    font-size: 18px;
+  }
+  .contact_cont .section2 .contact_us .reach{
+    font-size: 16px;
+  }
+  .contact_cont .section2 .contact_us span{
+    font-size: 18px;
+  }
+}

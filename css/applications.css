@@ -1,0 +1,105 @@
+.heading_cont{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.app_heading{
+    margin-top: 40px;
+    font-size: 32px;
+    font-weight: 500
+}
+.app_heading .line{
+    height: 3px;
+    width: 50%;
+    background-color: rgb(0, 78, 122);
+}
+.app{
+    margin-top: 50px;
+}
+.app .row{
+    margin: 20px 5vw;
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 20px;
+    margin-bottom: 25px;
+    transition: 0.5s ease-in;
+}
+.app .row:hover{
+    background-color: rgba(255, 255, 255, 0.8);
+}
+.app .row .img_cont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.app .row .img_cont img{
+    height: 350px;
+    width: 100%;
+    border-radius: 20px;
+    border-bottom: 6px solid rgb(0, 78, 122);
+}
+.app .row:nth-child(2n) .img_cont img{
+    border-right: 6px solid rgb(0, 78, 122);
+    box-shadow: 5px 5px 10px rgba(48, 48, 48, 0.5);
+}
+.app .row:nth-child(2n+1) .img_cont img{
+    border-left: 6px solid rgb(0, 78, 122);
+    box-shadow: -5px 5px 10px rgba(48, 48, 48, 0.5);
+}
+.app .row .text_cont{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 40px;
+    font-size: 18px;
+    text-align: justify;
+}
+.app .row .text_cont .heading{
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    text-align: center;
+}
+@media only screen and (max-width:991px){
+    
+    .app .row{
+        padding: 60px 20px;
+    }
+    .app .row .img_cont img{
+        width: 80%;
+    }
+    .app .row .text_cont .heading{
+        margin-top: 30px;
+    }
+
+}
+@media only screen and (max-width:550px){
+
+    .app .row{
+        margin: 20px 0;
+    }
+}
+@media only screen and (max-width:450px){
+    
+    .app{
+        margin-top: 0px;
+    }
+    .app_heading{
+        font-size: 28px;
+    }
+    .app .row{
+        padding: 20px 0;
+    }
+    .app .row .img_cont img{
+        height: 200px;
+        width: 100%;
+    }
+    .app .row .text_cont{
+        padding: 40px 20px;
+        font-size: 16px;
+    }
+    .app .row .text_cont .heading{
+        margin-top: 0px;
+        font-size: 20px;
+    }
+
+}
