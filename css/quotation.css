@@ -3,8 +3,20 @@
     padding: 0 5vw;
 }
 .contact_cont .section1 .heading .big{
+    width: fit-content;
     font-size: 32px;
     font-weight: 600;
+    margin-bottom: 20px;
+    cursor: default;
+}
+.contact_cont .section1 .heading .big .line{
+  height: 3px;
+  width: 50%;
+  background-color: rgb(0, 78, 122);
+  transition: 0.5s ease-in-out;
+}
+.contact_cont .section1 .heading .big:hover .line{
+  width: 100%;
 }
 .contact_cont .section1 .heading .small{
     font-size: 18px;
@@ -142,6 +154,10 @@
 .contact_cont .section2 .contact_us .reach{
     font-size: 18px;
     margin-top: 10px;
+}
+.contact_cont .section2 .contact_us .reach.user{
+    font-size: 20px;
+    font-weight: 500;
 }
 
 .contact_cont .section2 .contact_us span{

@@ -8,11 +8,17 @@
     font-size: 32px;
     font-weight: 500;
     margin-bottom: 40px;
+    cursor: default;
+    transition: 0.5s ease-in-out;
 }
 .product_detail .heading .line{
     height: 3px;
     width: 50%;
     background-color: rgb(0, 78, 122);
+}
+.product_detail .heading:hover .line{
+    height: 3px;
+    width: 100%;
 }
 .product_detail .img_cont{
     position: sticky;

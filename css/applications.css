@@ -6,12 +6,18 @@
 .app_heading{
     margin-top: 40px;
     font-size: 32px;
-    font-weight: 500
+    font-weight: 500;
+    cursor: default;
 }
 .app_heading .line{
     height: 3px;
     width: 50%;
     background-color: rgb(0, 78, 122);
+    transition: 0.5s ease-in-out;
+}
+.app_heading:hover .line{
+    height: 3px;
+    width: 100%;
 }
 .app{
     margin-top: 50px;

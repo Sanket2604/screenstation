@@ -167,7 +167,7 @@
 
 }
 .owl-carousel1 .prev-slide{
-  left: -25px;
+    left: -25px;
 }
 .owl-carousel1 .next-slide{
   right: -25px;
@@ -266,11 +266,16 @@
 }
 .chooseus .line{
     height: 4px;
-    width: 100px;
+    width: 50%;
     background-color: rgb(0, 78, 122);
+    transition: 0.5s ease-in-out;
+}
+.chooseus .head_cont:hover .line{
+    width: 100%;
 }
 .chooseus .stats .heading{
     margin: 20px 0;
+    width: 95%;
     font-size: 16px;
     display: flex;
     justify-content: space-between;
@@ -278,17 +283,9 @@
 .chooseus .stats .stat{
     background-color: rgb(0, 78, 122);
     height: 10px;
+    width: 95%;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
-}
-.chooseus .stats:nth-child(1){
-    width: 80%;
-}
-.chooseus .stats:nth-child(2){
-    width: 90%;
-}
-.chooseus .stats:nth-child(3){
-    width: 70%;
 }
 .chooseus .content{
     display: flex;
@@ -452,10 +449,10 @@
     align-items: center;
 }
 .owl-carousel2 .prev-slide{
-  left: -25px;
+    left: -25px;
 }
 .owl-carousel2 .next-slide{
-  right: -25px;
+    right: -25px;
 }
 .owl-carousel2 .prev-slide:hover,
 .owl-carousel2 .next-slide:hover{
@@ -482,6 +479,7 @@
 }
 @media only screen and (max-width: 580px){
     
+    
     .owl-carousel1 .prev-slide{
         left: -10px;
     }
@@ -500,8 +498,10 @@
     .attributes .card_section .attribute .icon{
         font-size: 32px;
     }
-    .chooseus .statistics{
-        margin-left: 20px;
+    
+    .chooseus{
+        padding: 60px 20px;
+        overflow: hidden;
     }
     .callback{
         padding: 80px 5vw;

@@ -49,18 +49,8 @@
   margin-right: 15px;
   transition: all 0.5s ease-in-out;
 }
-.social-icons_footer a .fab, 
-.social-icons_footer a .far,
-.social-icons_footer a .fas{
+.social-icons_footer a .fab{
   line-height: 45px;
-}
-.social-icons_footer .gmail{
-  color: rgb(231, 231, 231);
-}
-.social-icons_footer .gmail:hover{
-  background: #e60c0c;
-  color: rgb(231, 231, 231);
-  transform: translateY(-5px) scale(1.1);
 }
 .social-icons_footer .fac{
   color: rgb(231, 231, 231);
@@ -86,14 +76,6 @@
   color: rgb(231, 231, 231);
   transform: translateY(-5px) scale(1.1);
 }
-.social-icons_footer .ph{
-  color: rgb(231, 231, 231);
-}
-.social-icons_footer .ph:hover{
-  background: black;
-  color: rgb(231, 231, 231);
-  transform: translateY(-5px) scale(1.1);
-}
 .footer .section2 ul{
   list-style: none;
 }
@@ -110,6 +92,8 @@
 .footer .section3 .loc_box{
   height: 290px;
   width: 100%;
+  border-radius: 5px;
+  overflow: hidden;
 }
 .footer .row2{
     margin-top: 30px;
