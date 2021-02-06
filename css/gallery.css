@@ -22,7 +22,7 @@
 }
 .gallery_grid{
     display: grid;
-    grid-template: repeat(3 , 1fr) / repeat(4 , 1fr);
+    grid-template: repeat(5 , 1fr) / repeat(4 , 1fr);
     justify-content: center;
     align-items: center;
     grid-gap: 20px;
@@ -68,20 +68,67 @@
     height: 100%;
     width: 100%;
 }
+.modal-dialog{
+    margin-top: 100px;
+}
+@media only screen and (min-width:850px){
+    
+    .modal-header{
+        width: 600px;
+        background-color: white;
+    }
+    .modal-header .fa-times{
+        font-size: 24px;
+    }
+    .modal-body{
+        height: 450px;
+        width: 600px;
+        background-color: white;
+    }
+}
+
+@media only screen and (max-width:850px) and (min-width:576px){
+    
+    .modal-header{
+        width: 500px;
+        background-color: white;
+    }
+    .modal-header .fa-times{
+        font-size: 24px;
+    }
+    .modal-body{
+        height: 450px;
+        width: 500px;
+        background-color: white;
+    }
+}
+@media only screen and (max-width:575px){
+    
+    .modal-header{
+        background-color: white;
+    }
+    .modal-header .fa-times{
+        font-size: 18px;
+    }
+    .modal-body{
+        height: 350px;
+        background-color: white;
+    }
+}
 @media only screen and (max-width:1280px){
     .gallery_grid{
-        grid-template: repeat(4 , 1fr) / repeat(3 , 1fr);
+        grid-template: repeat(7 , 1fr) / repeat(3 , 1fr);
     }   
 }
 @media only screen and (max-width:950px){
     .gallery_grid{
-        grid-template: repeat(6 , 1fr) / repeat(2 , 1fr);
+        grid-template: repeat(10 , 1fr) / repeat(2 , 1fr);
         grid-gap: 10px;
     }   
 }
 @media only screen and (max-width:600px){
     .gallery_grid{
-        grid-template: repeat(12 , 250px) / repeat(1 , 1fr);
+        grid-template: repeat(20 , 250px) / repeat(1 , 1fr);
     }  
     .gallery_grid .img_cont img{
         height: 250px;

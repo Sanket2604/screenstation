@@ -182,16 +182,16 @@
 }
 
 .gallery_grid .img_cont .img1{
-    background-image: url(../images/gallery/6.jpg);
+    background-image: url(../images/quality/Quality.jpg);
 }
 .gallery_grid .img_cont .img2{
-    background-image: url(../images/product/perforated\ sheet\ roll.jpg);
+    background-image: url(../images/quality/Quality\ \(1\).jpg);
 }
 .gallery_grid .img_cont .img3{
-    background-image: url(../images/gallery/3.jpeg);
+    background-image: url(../images/quality/q3.jpg);
 }
 .gallery_grid .img_cont .img4{
-    background-image: url(../images/gallery/12.jpg);
+    background-image: url(../images/quality/q4.jpg);
 }
 .gallery_grid .img_cont:hover .img{
     transform: scale(1.1);
@@ -285,5 +285,11 @@
         padding: 0px;
         font-size: 16px;
         border-radius: 0;
+    }
+}
+@media only screen and (max-width:385px){
+
+    .content.slide1 span{
+        font-size: 18px !important;
     }
 }

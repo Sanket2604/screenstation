@@ -1,17 +1,17 @@
 .footer{
   position: relative;
-  background-color: rgb(77, 77, 77);
+  background-color: rgb(70, 70, 70);
   padding: 50px 5vw;
   margin-top: 50px;
   padding-bottom: 30px;
   color: rgb(231, 231, 231);
-  transition: 0.5s ease-in-out;
+  transition: 1s ease-in-out;
 }
 .footer a:hover{
   color: white;
 }
 .footer:hover{
-  background-color: rgb(65, 65, 65);
+  background-color: rgb(50, 50, 50);
 }
 .footer .section .heading{
   margin: 20px 0;
@@ -19,6 +19,7 @@
   font-weight: 500;
 }
 .footer .section1 img{
+  padding: 5px;
   height: 70px;
   margin-bottom: 25px;
 }
@@ -98,7 +99,7 @@
 .footer .row2{
     margin-top: 30px;
     padding-top: 30px;
-    border-top: 4px solid rgb(53, 53, 53);
+    border-top: 4px solid rgb(255, 255, 255);
 }
 .footer .row2 .company_line{
     font-size: 20px;
@@ -124,6 +125,15 @@
   }
   .footer .section3 .loc_box{
     width: 100%;
+  }
+}
+
+@media only screen and (max-width:768px){
+  .footer .section2 .box{
+    display: flex;
+  }
+  .footer .section2 .box_1{
+    margin-right: 80px;
   }
 }
 @media only screen and (max-width:550px){
@@ -156,6 +166,9 @@
   .footer .section2 .box{
     display: flex;
     justify-content: space-around;
+  }
+  .footer .section2 .box_1{
+    margin-right: 0px;
   }
   .footer .company_line{
     font-size: 16px!important;

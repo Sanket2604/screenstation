@@ -40,8 +40,12 @@ a:hover{
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    background-color: rgb(77, 77, 77);
+    background-color: rgb(70, 70, 70);
     z-index: 5;
+    transition: 1s ease-in-out;
+}
+.contact_tab:hover{
+    background-color: rgb(50, 50, 50);
 }
 .contact_tab .box1 a{
     margin-right: 40px;
@@ -58,7 +62,7 @@ a:hover{
     top: 30px;
     right: 200px;
     padding: 0px 10px;
-    background-color: rgb(77, 77, 77);
+    background-color: rgb(50, 50, 50);
     transform: translateY(20px);
     opacity: 0;
     height: 0;
@@ -228,7 +232,7 @@ a:hover{
     position: fixed;
     height: 100vh;
     width: 100vw;
-    background-color: rgba(128, 128, 128, 0.6);
+    background-color: rgba(0, 0, 0, 0.3);
     opacity: 0;
     z-index: -1;
     transition: opacity 0.75s ease-in-out;
@@ -242,7 +246,7 @@ a:hover{
     width: 440px;
     opacity: 0;
     height: 100%;
-    background-color: rgba(0, 57, 90, 0.85);
+    background-color: rgba(70, 70, 70, 0.8);
     z-index: 5;
     color: white;
     left: -460px;
@@ -277,7 +281,7 @@ a:hover{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: rgba(0, 57, 90, 0.95);
+    background-color: rgba(49, 49, 49, 0.8);
     font-size: 24px;
 }
 .sidebar .list .listele:last-child{
@@ -331,10 +335,12 @@ a:hover{
     color: white;
     background-color: rgba(0, 158, 47, 0.9);
     border-radius: 50px;
-    transition: 0.5s ease-in-out;
+    transition: 0.75s ease-in-out;
     z-index: 4;
+    overflow: hidden;
 }
 .whtsapp a .hide{
+    opacity: 0;
     width: 0;
     font-size: 16px;
     overflow: hidden;
@@ -347,6 +353,40 @@ a:hover{
 .whtsapp:hover a .hide{
     margin-left: 10px;
     width: auto;
+    opacity: 1;
+}
+
+.phone_mob{
+    position: fixed;
+    bottom: 130px;
+    right: 3vw;
+    height: 40px;
+    width: 40px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    color: white;
+    background-color: rgba(27, 27, 27, 0.8);
+    border-radius: 50px;
+    transition: 0.5s ease-in-out;
+    z-index: 4;
+}
+.mail_mob{
+    position: fixed;
+    bottom: 180px;
+    right: 3vw;
+    height: 40px;
+    width: 40px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    color: white;
+    background-color: #c71610da;
+    border-radius: 50px;
+    transition: 0.5s ease-in-out;
+    z-index: 4;
 }
 @media only screen and (max-width: 1184px) {
     .menu-btn, .menu-btn_burger{
@@ -360,7 +400,7 @@ a:hover{
     }
 }
 
-@media only screen and (max-width: 670px) {
+@media only screen and (max-width: 709px) {
     .contact_tab{
         display: none;
     }
@@ -370,7 +410,12 @@ a:hover{
     .nav .logo{    
         transform: scale(0.8);
     }
-    
+    .phone_mob{
+        display: flex;
+    }
+    .mail_mob{
+        display: flex;
+    }
 }
 
 @media only screen and (max-width: 500px) {
@@ -394,7 +439,7 @@ a:hover{
         height: 40px;
         width: 40px;
         font-size: 22px;
-        bottom: 70px;
+        bottom: 80px;
         right: 3vw;
     }
     .menu-btn{
